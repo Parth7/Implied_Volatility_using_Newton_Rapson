@@ -4,6 +4,7 @@
 
 #include "BlackScholes.h"
 #include"bs_prices.h"
+#include<iostream>
 
 template<typename T>
 Black_Scholes<T>::Black_Scholes(T S_, T K_, T r_, T t_) : S(S_), K(K_), r(r_), t(t_) {}
@@ -18,4 +19,9 @@ template<typename T>
 T Black_Scholes<T>::option_vega(T sigma) const
 {
     return call_vega(S,K,r,sigma,t);
+}
+
+ostream& operator << ( ostream &os, const Black_Scholes<double> & BS )
+{
+    os << BS.option_price(BS.S) <<endl;
 }

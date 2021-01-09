@@ -33,4 +33,3 @@ double BondPricing::PresentValue(const Vector &prices, long nPeriods, double r)
     }
     return PV;
 }
-
