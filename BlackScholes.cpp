@@ -20,8 +20,3 @@ T Black_Scholes<T>::option_vega(T sigma) const
 {
     return call_vega(S,K,r,sigma,t);
 }
-
-ostream& operator << ( ostream &os, const Black_Scholes<double> & BS )
-{
-    os << BS.option_price(BS.S) <<endl;
-}

@@ -36,4 +36,5 @@ public:
 
     void toggle();
 };
+
 #endif //IMPLIED_VOLATILITY_USING_NEWTON_RAPSON_EUROPEANOPTION_H

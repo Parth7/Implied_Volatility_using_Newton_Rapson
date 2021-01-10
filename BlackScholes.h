@@ -7,7 +7,7 @@
 
 #include<iostream>
 
-template<typename T>
+template<typename T=double>
 class Black_Scholes
 {
 private:
